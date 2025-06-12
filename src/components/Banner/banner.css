@@ -1,9 +1,10 @@
 .sectionBanner {
+    width: 100%;
+    margin: 100px auto 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin: 5% 0;
 }
 
 .containerTextHero {
@@ -16,7 +17,8 @@
 }
 
 .containerTextHero h1 {
-    font-size: 45px;
+    font-size: 50px;
+    font-weight: bold;
 }
 
 .containerTextHero p {
@@ -28,6 +30,11 @@
     background-color: #9A03FF;
     padding: 15px 48px;
     border-radius: 5px;
+    font-weight: bold;
+}
+.buttonsectionBanner:hover {
+    background-color: #7a02cc;
+    transition: background-color 0.3s ease-in-out;
 }
 
 .image-hero-banner{
@@ -60,11 +67,13 @@
     }
     
     .containerTextHero h1 {
-        font-size: 2em;
+        font-size: 40px;
     }
     
     .containerTextHero p {
-        font-size: .8em;
+        max-width: 300px;
+        margin: 0 auto;
+        text-align: center;
     }
     
     .buttonsectionBanner {

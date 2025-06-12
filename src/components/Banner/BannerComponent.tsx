@@ -31,8 +31,7 @@ const BannerComponent = () => {
             src={ImageBanner}
             className="image-hero-banner"
             alt="Hola"
-            width={450}
-            height={467}
+            width={600}
             loading="lazy"
           />
         </main>
