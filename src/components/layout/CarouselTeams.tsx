@@ -23,7 +23,7 @@ const CarouselTeam = () => {
         </button>
       </div>
 
-      <div className="absolute lg:right-[10%] md:right-[10%] right-[5%] top-1/2 -translate-y-1/2 z-10">
+      <div className="absolute lg:right-[12%] md:right-[10%] right-[5%] top-1/2 -translate-y-1/2 z-10">
         <button className="swiper-button-next-custom p-2 rounded-full transition" title="next">
           <CaretRightIcon size={32} color="#00266c" />
         </button>
@@ -42,7 +42,7 @@ const CarouselTeam = () => {
           disableOnInteraction: false,
         }}
         modules={[Autoplay, Navigation]}
-        className="w-[80%] h-full !m-0 !py-8 !px-20"
+        className="w-[80%] h-full m-0! py-8! px-20!"
       >
         {people.map((person, index) => (
           <SwiperSlide key={index}>
