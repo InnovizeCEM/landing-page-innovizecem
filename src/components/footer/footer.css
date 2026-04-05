@@ -1,5 +1,5 @@
 .section-footer{
-  width: 100vw;
+  width: 100%;
   height: 50vh;
   display: flex;
   align-items: center;
@@ -18,10 +18,10 @@
 }
 
 .logo-footer-ctn{
-  width: 400px;
+  width: 500px !important;
 }
 
-.politic-docs-footer{
+.links_legal_files{
   display: flex;
   gap: 20px;
 }
@@ -33,7 +33,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 0% 12%;
 }
 
@@ -49,19 +49,6 @@
   border-radius: 50px;
   display: flex;
 }
-
-/* barra footer abajo */
-
-.down-footer{
-  width: 100vw;
-  height: 50px;
-  background-color: #1c255c;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 
 /* Estilos específicos para teléfonos */
 @media screen and (max-width: 767px) {

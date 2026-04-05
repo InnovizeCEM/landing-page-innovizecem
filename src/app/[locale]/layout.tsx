@@ -40,7 +40,6 @@ export default async function RootLayout({
       <body className={raleway.className}>
         <NextIntlClientProvider messages={messages}>
           {children}
-          <Footer />
           <Script src="https://unpkg.com/@phosphor-icons/web@2.1.1" />
         </NextIntlClientProvider>
       </body>

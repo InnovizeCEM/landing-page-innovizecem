@@ -2,16 +2,8 @@
 import React from "react";
 import "./solution.css";
 import { useTranslations } from "next-intl";
+import { Servicio } from "@/types/types";
 
-interface Servicio {
-  id: string;
-  icon: string;
-  servicio: string;
-  descripcion: string;
-  beneficios: string[];
-  enlaceName: string;
-  enlace: string;
-}
 
 const Solution = () => {
 

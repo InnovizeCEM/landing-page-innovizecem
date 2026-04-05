@@ -1,17 +1,15 @@
-import CardAbout from '../../components/cardAbout/CardAbout'
 import React from 'react'
 import "./about.css"
 import { useTranslations } from 'next-intl';
-
-
+import CarouselTeam from '@/components/layout/CarouselTeams';
 
 const About = () => {
   const t = useTranslations("about");
   return (
     <>
       <section className='sectionAbout' id='About'>
-        <div>
-          <CardAbout/>
+        <div className='fondoCard'>
+          <CarouselTeam/>
         </div>
         <div className='containerDescriptionAbout'>
           <h5>{t("title")}</h5>

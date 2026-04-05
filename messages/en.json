@@ -19,38 +19,38 @@
       {
         "id": "Carolay Meza",
         "position": "CEO",
-        "image": "https://res.cloudinary.com/dk9ktxdpj/image/upload/v1741046923/Innova%20Cem%20%28aliados%29/team/t5o4s9cqldezo1mngiaf.webp",
+        "image": "/teams/Carolay.webp",
         "opinion": "Visionary and disruptive, Carolay Meza drives digital transformation with empathy and creativity. She uses technology to innovate and generate real opportunities, demonstrating that business growth and social impact go hand in hand. With strategic vision, she creates solutions that optimize businesses and change lives. For her, where there is a will, there is a way."
       },
       {
         "id": "Steven Zuluaga",
         "position": "Engineer",
-        "image": "https://res.cloudinary.com/dk9ktxdpj/image/upload/v1741046918/Innova%20Cem%20%28aliados%29/team/vmxskpn7vq7ms19xm9mj.webp",
+        "image": "/teams/Estiven.webp",
         "opinion": "Technology expert with a passion for teaching and leading by example. With +5 in the sector, he not only masters digital transformation, but also guides his team with knowledge, patience and strategic vision. His practical and collaborative approach inspires those around him, fostering a culture of continuous learning and excellence. For him, the best way to lead is to demonstrate with actions, driving innovative solutions that optimize processes and generate real impact."
       },
       {
         "id": "Estevenson Murillo",
         "position": "UX/UI",
-        "image": "https://res.cloudinary.com/dk9ktxdpj/image/upload/v1741191951/Innova%20Cem%20%28aliados%29/team/hfqrepineed7laurfy2q.webp",
+        "image": "/teams/Estevenson.webp",
         "opinion": "UX/UI specialist who combines creativity and functionality to design intuitive and engaging digital experiences. With a user-centric approach, he transforms ideas into efficient interfaces that optimize interaction and improve usability. His attention to detail and mastery of design trends allow him to create innovative solutions that not only look good, but also create impact. For him, every design is an opportunity to connect technology and emotion, making every user enjoy and trust the experience."
       },
       {
         "id": "Andrea Mosquera",
         "position": "Designer",
-        "image": "https://res.cloudinary.com/dk9ktxdpj/image/upload/v1741193349/Innova%20Cem%20%28aliados%29/team/ndixoabkxnmkibs6ruzh.webp",
+        "image": "/teams/Mirla.webp",
         "opinion": "UX/UI specialist with 9 years of experience in graphic design for print and digital media, Mirla specializes in the creation of visual identities, corporate image development, and content for social media. Her passion for design goes beyond aesthetics; she considers it a key means of communication, where every shape, color, and space conveys a message. In addition, she enjoys illustration and crafts, which reinforces her creative and innovative approach. Her goal is to design clearly and concisely to achieve high impact and effectively meet communication objectives."
       },
       {
         "id": "Anderson Lozano",
         "position": "FullStack",
-        "image": "https://res.cloudinary.com/dk9ktxdpj/image/upload/v1746470109/Innova%20Cem%20%28aliados%29/team/xooeytntg25mcsjttjtd.webp",
+        "image": "/teams/Anderson.webp",
         "opinion": "Software developer with more than two years of experience in backend. He has worked on solutions for package management, shipping and tracking, developing REST APIs and mobile applications. He has knowledge in microservices, responsive web interfaces, dockerization, application deployment, technical documentation and database management. He stands out for his assertive communication, quick learning ability, problem solving, teamwork and initiative, providing value in different environments and contributing to the achievement of the company's objectives."
       },
       {
         "id": "Jhonier Mosquera",
-        "position": "Frontend",
-        "image": "https://res.cloudinary.com/dk9ktxdpj/image/upload/v1746470110/Innova%20Cem%20%28aliados%29/team/rzsbwfv5odulnskim2oz.webp",
-        "opinion": "Frontend Developer with over a year of experience building dynamic and efficient user interfaces using React.js, Next.js, and TypeScript. Passionate about technology and committed to continuous learning, I am currently studying Systems Engineering at Instituto Tecnológico Metropolitano (ITM) and acquiring Android development skills through Udemy courses."
+        "position": "Developer",
+        "image": "/teams/Jhonier.webp",
+        "opinion": "Developer with over a year of experience building dynamic and efficient user interfaces using React.js, Next.js, and TypeScript. Passionate about technology and committed to continuous learning, I am currently studying Systems Engineering at Instituto Tecnológico Metropolitano (ITM) and acquiring Android development skills through Udemy courses."
       }
 
     ]

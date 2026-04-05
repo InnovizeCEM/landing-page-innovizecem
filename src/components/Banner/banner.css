@@ -3,7 +3,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    margin: 5% 0;
+    margin: 10% 0;
 }
 
 .containerTextHero {
@@ -28,6 +28,7 @@
     background-color: #9A03FF;
     padding: 15px 48px;
     border-radius: 5px;
+    align-self: flex-start;
 }
 
 .image-hero-banner{

@@ -1,15 +1,22 @@
 .sectionAbout{
-    width: 100vw;
-    height: 120vh;
+    width: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    position: relative;
-    bottom: 60px;
-    background-image: url("../../../public/assets/fondo-about.webp");
+    background-image: url("../../../public/assets/about_theme.svg");
     background-size: 100% 50%;
     background-position: bottom;
     background-repeat: no-repeat;
+}
+
+.fondoCard{
+    width: 40%;
+    height: 80%;
+    background-image: url("../../../public/assets/jobs.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 2; 
 }
 
 .containerDescriptionAbout{
@@ -54,6 +61,12 @@
         font-size: .8em;
         width: 210px;
         height: 300px;
+    }
+
+    .fondoCard{
+        width: 300px;
+        height: 400px;
+        background-size: cover;
     }
 }
 

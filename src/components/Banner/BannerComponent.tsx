@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import ImageBanner from "../../../public/assets/imagenhero.svg";
+import ImageBanner from "../../../public/assets/hero.svg";
 import "./banner.css";
 import Link from "next/link";
 import { useTranslations } from "next-intl";

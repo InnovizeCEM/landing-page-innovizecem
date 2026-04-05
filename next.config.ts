@@ -1,15 +1,12 @@
 import { NextConfig } from 'next';
 import createNextIntlPlugin from 'next-intl/plugin';
+import tailwindcss from '@tailwindcss/vite'
+
 
 const nextConfig: NextConfig = {
-    images: {
-        remotePatterns: [
-            {
-                protocol: 'https',
-                hostname: 'res.cloudinary.com',
-                pathname: '/dk9ktxdpj/image/upload/**',
-            },]
-    }
+    plugins: [
+        tailwindcss(),
+  ],
 };
 
 const withNextIntl = createNextIntlPlugin();

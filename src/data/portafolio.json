@@ -1,27 +1,44 @@
 [
     {
         "id": "01",
-        "image": "https://res.cloudinary.com/dk9ktxdpj/image/upload/v1749566924/Innova%20Cem%20%28aliados%29/pllmleh57bvb84ey63il.png",
-        "name": "Yigal"
+        "image": "/allies/YR.png",
+        "name": "Yigal",
+        "url": ""
     },
     {
         "id": "02",
-        "image": "https://res.cloudinary.com/dk9ktxdpj/image/upload/v1749566924/Innova%20Cem%20%28aliados%29/fbpkmazxw7nt1qifwaqt.png",
-        "name": "Vartal"
+        "image": "/allies/VARTAL.png",
+        "name": "Vartal",
+        "url": ""
     },
     {
         "id": "03",
-        "image": "https://res.cloudinary.com/dk9ktxdpj/image/upload/v1749566924/Innova%20Cem%20%28aliados%29/o5gylhhrrrr7shnzyzsu.png",
-        "name": "Custom"
+        "image": "/allies/CDC.png",
+        "name": "Custom",
+        "url": ""
     },
     {
         "id": "04",
-        "image": "https://res.cloudinary.com/dk9ktxdpj/image/upload/v1749583049/Innova%20Cem%20%28aliados%29/tn0dfhgaoqfhkvtufmb0.png",
-        "name": "jch"
+        "image": "/allies/JCH.png",
+        "name": "jch",
+        "url": ""
     },
     {
         "id": "05",
-        "image": "https://res.cloudinary.com/dk9ktxdpj/image/upload/v1749566924/Innova%20Cem%20%28aliados%29/ly7eent5utr09fx5hj1r.png",
-        "name": "jaz"
+        "image": "/allies/JAZ.png",
+        "name": "jaz",
+        "url": ""
+    },
+    {
+        "id": "06",
+        "image": "/allies/MONICAPANEGOS.png",
+        "name": "Monica Panegos",
+        "url": "https://www.dramonicappenagos.com"
+    },
+    {
+        "id": "07",
+        "image": "/allies/Summit.png",
+        "name": "Summit",
+        "url": "https://www.summitmoulding.com"
     }
 ]

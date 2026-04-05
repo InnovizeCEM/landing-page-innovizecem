@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/Footer";
 import About from "../../container/About Us/About";
 import Hero from "../../container/Hero/Hero";
 import Solution from "../../container/Solution Us/Solution";
@@ -15,6 +16,10 @@ export default function Home() {
         <Solution/>
         <Portfolio/>
         <Contact/>
+        <Footer />
+      </div>
+      <div className="w-full h-[5vh] bg-blue-950 text-white text-center pt-1">
+        <p>&copy; 2024 Innovizecem</p>
       </div>
     </>
   );

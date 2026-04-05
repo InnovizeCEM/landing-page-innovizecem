@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from "next/image"
-import imagesContact from "../../../public/assets/img-contact.webp"
+import imagesContact from "../../../public/assets/contact.svg"
 import "./contact.css"
 import { useTranslations } from 'next-intl'
 
@@ -11,11 +11,10 @@ const Contact = () => {
   return (
     <>
       <section className='container-contact' id='Contact'>
-        <div className='curve-fondo-contact'></div>
         <main className='card-contact'>
           <div className='description-container-contact'>
             <div className='title-contact'>
-              <h3>{t("title")}</h3>   
+              <p className='text-2xl font-bold'>{t("title")}</p>   
             </div>
             <div className='description-contact'>
               <p>{t("textUp")}</p>
