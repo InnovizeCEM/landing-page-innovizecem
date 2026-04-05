@@ -64,9 +64,17 @@
     }
 
     .fondoCard{
-        width: 300px;
-        height: 400px;
+        width: 90%;
+        height: 450px;
         background-size: cover;
+    }
+
+    .opinionWorkers{
+        width: 80%;
+    }
+
+    .containerOpinionWorkers{
+        margin-top: 20px;
     }
 }
 

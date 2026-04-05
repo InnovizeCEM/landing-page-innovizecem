@@ -60,7 +60,7 @@ const CarouselTeam = () => {
                 height={300}
                 loading="lazy"
               />
-              <p className="helloWorkers">{person.position}</p>
+              <p className="bg-[#9A03FF] text-white lg:py-2 py-1 lg:px-4 px-2 rounded-4xl z-10 relative lg:top-12 top-16 lg:right-15 right-32 font-medium animate-rol">{person.position}</p>
             </div>
             <div className="containerOpinionWorkers">
               <p className="name-workers">
