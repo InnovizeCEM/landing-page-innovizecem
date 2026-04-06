@@ -2,7 +2,7 @@
 import React from "react";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "../cardAbout/CardAbout.css";
+import "../cardAbout/cardAbout.css";
 import Image from "next/image";
 import { CaretLeftIcon, CaretRightIcon, HandIcon } from "@phosphor-icons/react/dist/ssr";
 import { useTranslations } from "next-intl";
