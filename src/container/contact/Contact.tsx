@@ -24,7 +24,7 @@ const Contact = () => {
               <a href="https://wa.me/+573104300153/" className='btn-contact' aria-label='Contact Us Now!'>{t("btn")}</a>
             </div>               
           </div>
-          <Image className="image-contact" src={imagesContact} alt="imagen de contacto" width={270} height={410} loading='lazy'/>
+          <Image className="image-contact" src={imagesContact} alt="imagen de contacto" width={270} height={410} priority/>
         </main>
       </section>
     </>

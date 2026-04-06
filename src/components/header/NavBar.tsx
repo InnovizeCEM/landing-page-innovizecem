@@ -22,7 +22,7 @@ const NavBar = () => {
       <section className="section-header">
         <nav className="container-nav">
           <picture className="logo">
-            <Image src={logoHeader} alt="logo" loading='lazy' width={170} height={150}/>
+            <Image src={logoHeader} alt="logo" priority width={170} height={150}/>
           </picture>
           <div className="hamburger" onClick={toggleMenu}>
             <List size={24} />

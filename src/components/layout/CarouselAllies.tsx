@@ -31,7 +31,7 @@ const CarouselAllies = () => {
           <SwiperSlide key={index}>         
             <div className='logos-carrusel-ptf' key={data.id}>
               <Link href={data.url}>
-                <Image className="img-ptf" src={data.image} alt={data.name} width={110} height={100} loading='lazy'/>
+                <Image className="img-ptf" src={data.image} alt={data.name} width={110} height={100} priority/>
               </Link>
             </div>
           </SwiperSlide>

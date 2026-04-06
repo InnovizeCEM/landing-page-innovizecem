@@ -20,7 +20,7 @@ const Footer = () => {
             <Image
               src={imageFooter}
               alt="logo de innova cem sección footer"
-              loading="lazy"
+              priority
               width={200}
               height={100}
               />

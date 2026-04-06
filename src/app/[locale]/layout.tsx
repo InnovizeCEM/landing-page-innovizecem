@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 import "./globals.css";
-import Footer from "../../components/footer/Footer";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
@@ -33,10 +32,7 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
-      <head>
-
-      </head>
+    <html lang={locale} suppressHydrationWarning>
       <body className={raleway.className}>
         <NextIntlClientProvider messages={messages}>
           {children}

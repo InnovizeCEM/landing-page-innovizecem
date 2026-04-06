@@ -58,7 +58,7 @@ const CarouselTeam = () => {
                 alt={person.id}
                 width={300}
                 height={300}
-                loading="lazy"
+                priority
               />
               <p className="bg-[#9A03FF] text-white lg:py-2 py-1 lg:px-4 px-2 rounded-4xl z-10 relative lg:top-12 top-16 lg:right-15 right-32 font-medium animate-rol">{person.position}</p>
             </div>

@@ -33,7 +33,7 @@ const BannerComponent = () => {
             alt="Hola"
             width={450}
             height={467}
-            loading="lazy"
+            priority
           />
         </main>
       </section>
