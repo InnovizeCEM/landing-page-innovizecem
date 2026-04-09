@@ -4,7 +4,7 @@
     margin-bottom: 30px 0px;
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 40px;
     background: rgb(75,13,182);
     background: linear-gradient(141deg, rgba(75,13,182,1) 9%, rgba(36,33,106,1) 30%, rgba(28,37,92,1) 62%, rgba(75,13,182,1) 91%);
 }

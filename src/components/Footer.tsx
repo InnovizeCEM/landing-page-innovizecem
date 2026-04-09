@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import imageFooter from "../../../public/assets/Logo_color.svg";
+import imageFooter from "../../public/assets/Logo_color.svg";
 import {
   InstagramLogoIcon,
   LinkedinLogoIcon,
