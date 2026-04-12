@@ -11,7 +11,7 @@ import Image from 'next/image';
 const CarouselAllies = () => {
   return (
     <Swiper
-        modules={[Autoplay]}
+      modules={[Autoplay]}
       autoplay={{
         delay: 0,
         disableOnInteraction: false,
@@ -28,12 +28,10 @@ const CarouselAllies = () => {
       className="w-full py-4"
       >
         {dataimage.map((data: bussinelogo, index: any ) => (
-          <SwiperSlide key={index}>         
-            <div className='logos-carrusel-ptf' key={data.id}>
-              <Link href={data.url}>
-                <Image className="img-ptf" src={data.image} alt={data.name} width={110} height={100} priority/>
-              </Link>
-            </div>
+          <SwiperSlide key={index}className=' flex! justify-center! items-center!'>         
+            <Link href={data.url}>
+              <Image className="w-[170px] h-[150px] object-contain" src={data.image} alt={data.name} width={110} height={100} priority/>
+            </Link>
           </SwiperSlide>
           ))}
       </Swiper>

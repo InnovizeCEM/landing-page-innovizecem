@@ -23,14 +23,6 @@
   margin-top: 20px;
 }
 
-.img-ptf{
-    width: 170px;
-    height: auto;
-    margin: 0 20px;
-    transition: .5s;
-    cursor: pointer;
-}
-
 .carrusel-ptf{
     display: flex;
     align-items: center;
@@ -44,27 +36,7 @@
         display: flex;
         flex-direction: column;
     }
-
-    .img-ptf{
-        width: 170px;
-        height: auto;
-        margin: 0 20px;
-    }
-    
-    .carrusel-ptf{
-        display: flex;
-        overflow: auto;
-        margin-top: 20px;
-        margin-left: 20px;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-    }
-    
-    .logos-carrusel-ptf{
-        white-space: nowrap;
-    }
 }
-
 /* Estilos específicos para tabletas */
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .section-portfolio{
