@@ -1,0 +1,81 @@
+name: Build Production Image
+
+on:
+  push:
+    branches:
+      - main
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  id-token: write
+
+concurrency:
+  group: landing-page-innovizecem-production
+  cancel-in-progress: false
+
+env:
+  AWS_REGION: us-east-1
+  ECR_REPOSITORY: innovize/landing-page-innovizecem
+
+jobs:
+  build:
+    name: Build and Publish
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: arn:aws:iam::369488682888:role/innovize-github-deploy-role
+          aws-region: ${{ env.AWS_REGION }}
+          allowed-account-ids: "369488682888"
+
+      - name: Login to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v2
+
+      - name: Prepare image metadata
+        env:
+          REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+        run: |
+          SHORT_SHA="${GITHUB_SHA::7}"
+
+          echo "IMAGE=${REGISTRY}/${ECR_REPOSITORY}" >> "$GITHUB_ENV"
+          echo "TAG_SHA=${GITHUB_SHA}" >> "$GITHUB_ENV"
+          echo "TAG_VERSION=main-${SHORT_SHA}" >> "$GITHUB_ENV"
+
+      - name: Build image
+        run: |
+          docker build \
+            --pull \
+            --label "org.opencontainers.image.revision=${GITHUB_SHA}" \
+            --label "org.opencontainers.image.source=https://github.com/${GITHUB_REPOSITORY}" \
+            -t "${IMAGE}:${TAG_SHA}" \
+            -t "${IMAGE}:${TAG_VERSION}" \
+            -t "${IMAGE}:latest" \
+            .
+
+      - name: Show image
+        run: |
+          docker image ls "${IMAGE}"
+
+      - name: Push image
+        run: |
+          docker push "${IMAGE}:${TAG_SHA}"
+          docker push "${IMAGE}:${TAG_VERSION}"
+          docker push "${IMAGE}:latest"
+
+      - name: Summary
+        run: |
+          echo "## Production image published" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "\`${IMAGE}:${TAG_SHA}\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "\`${IMAGE}:${TAG_VERSION}\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "\`${IMAGE}:latest\`" >> "$GITHUB_STEP_SUMMARY"

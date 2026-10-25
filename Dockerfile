@@ -1,25 +1,31 @@
-
-FROM node:22.23.4-alpine AS deps
+FROM node:22.23.4-alpine AS base
 
 WORKDIR /app
+
 RUN apk add --no-cache libc6-compat
 
+ENV NEXT_TELEMETRY_DISABLED=1
+
+
+# Dependencies
+FROM base AS deps
+
 COPY package.json package-lock.json ./
+
 RUN npm ci --no-audit --no-fund
 
-FROM node:22.23.4-alpine AS builder
 
-WORKDIR /app
-ENV NEXT_TELEMETRY_DISABLED=1
+# Build
+FROM base AS builder
 
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
 RUN npm run build
 
-FROM node:22.23.4-alpine AS runner
 
-WORKDIR /app
+# Production
+FROM base AS runner
 
 ENV NODE_ENV=production \
     NEXT_TELEMETRY_DISABLED=1 \
